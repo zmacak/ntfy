@@ -5,4 +5,4 @@ def notify(title, message, token, recipient, retcode=None):
 
     slack = Slacker(token)
 
-    slack.chat.post_message(recipient, message)
+    slack.chat.post_message(recipient, message, as_user=True)
